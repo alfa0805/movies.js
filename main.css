@@ -1,0 +1,178 @@
+body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration:none;
+    height: 100%;
+}
+#container{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.main_div {
+    width: 100%;
+    height: 1300px;
+    background: #10141E;
+    padding-top: 25px;
+    display: flex;
+}
+
+.dashboard {
+    width: 96px;
+    height:550px;
+    background: #161D2F;
+    border-radius: 15px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashbord_in_content {
+    width: 60px;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo_div {
+    width: 32px;
+    height: 25px;
+    margin:0 auto;
+}
+
+.navigations {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.logo_div > img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation_panel {
+    width: 20px;
+    height: 20px;
+}
+
+.navigation_panel > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.account_div {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account_logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('./Images/account.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* ----left --------------------------------------------------------- */
+.left{
+    padding-left:25px;
+}
+
+#search_form{
+    width: 100%;
+    display: flex;
+    height:50px;
+    align-items: center;
+}
+.searchimg{
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    &_img{
+        width: 100%;
+        height: 100%;
+    }
+}
+#input_search{
+    width:250px;
+    background: none;
+    border:none;
+    outline:none;
+    color: beige;
+}
+/* ----------nav ------------------------------- */
+.nav {
+    display: flex;
+    justify-content:start;
+    gap: 40px;
+   
+}
+.nav_card{
+    padding-bottom:50px;
+    padding-left: 10px;
+    background-size:cover; 
+    border-radius:20px;
+    height: 200px; 
+    width: 300px;
+    position: relative;
+}
+.nav_card:hover .hover-nav {
+    display: block;
+    transition: all 10s;
+}
+.nav_year{
+    padding-top: 20px;
+    padding-left: 15px;
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+.nav_number{
+    color:#0231ff;
+    font-size:18px;
+    font-weight:700;
+}
+.nav_draem{
+    color:#0231ff;
+    font-size:18px;
+    font-weight:700;  
+}
+.nav_title{
+    font-style:23px;
+    font-weight: normal;
+    color:#0231ff;
+    text-shadow:2px 2px 5px #10141E;
+}
+.hover-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(2, 169, 21, 0.445);
+    border-radius:20px;
+    display:none;
+}
+.hover-title{
+    text-align: center;
+    align-content: center;
+    color: aliceblue;
+    font-style:30px;
+    font-weight:bold;
+}
